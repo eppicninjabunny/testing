@@ -1,0 +1,234 @@
+$full-width: 100%;
+$container-width: 1200px;
+
+
+$white: white;
+$monster: 'Montserrat', sans-serif;;
+$sans: 'Open Sans', sans-serif;
+
+
+$purple: #731C4A;
+$overlay: .95;
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+header{
+	width: $full-width;
+	height: 500px;
+	background-image: url('https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: $monster;
+
+	.hamburger{
+		display: none;
+	}
+	
+	h3{
+		color: $white;
+		float: left;
+		position: relative;
+		z-index: 2;
+		margin-left: 20px;
+		margin-top: 20px;
+		font-weight: 400;
+	}
+
+	ul{
+		margin-top: 20px;
+		margin: auto;
+		position: relative;
+		z-index: 1;
+		float: right;
+	}
+
+	li{
+		float: left;
+		list-style-type: none;
+		margin: 30px 20px 0 20px;
+		font-weight: 200;
+		font-size: 12pt;
+	}
+
+	a{
+		text-decoration: none;
+		color: $white;
+	}
+
+}
+
+
+.overlay{
+	position: absolute;
+	height: 500px;
+	width: $full-width;
+	background-color: rgba($purple, $overlay);
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.header-content{
+	width: $container-width;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+	top: 200px;
+}
+
+.header-title,
+.header-text{
+	float: left;
+	color: $white;
+}
+
+.header-title{
+	width: 33%;
+
+	h1{
+	margin: 0;
+	font-size: 60px;
+	font-family: $sans;
+	font-weight: 600;
+		
+		a{
+		font-family: $monster;
+		}
+	}
+
+	
+	h3{
+	font-weight: 200;
+	font-size: 45px;
+	margin: 0;
+	font-family: $sans;
+	}
+
+}
+
+.header-text{
+	width: 45%;
+
+	p{
+		margin: 0;
+		font-family: $sans;
+		font-weight: 100;
+		font-size: 15pt;
+		margin-left: 75px;
+		color: #DAC0CE;
+	}
+}
+
+content{
+	width: $container-width;
+	height: auto;
+	display: block;
+	margin: auto;
+
+
+
+}
+
+.content-text{
+	width: 600px;
+
+
+	h2{
+		color: #C3182D;
+		font-family: $sans;
+		margin: 75px 0 30px 0;
+		font-weight: 400;
+}
+
+	h3{
+		color: #822156;
+		font-size: 15pt;
+		font-weight: 400;
+		font-family: $sans;
+		margin: 30px 0 0 0;
+	}
+
+	p,
+		ul li{
+		font-size: 11pt;
+		font-family: $sans;
+		margin: 0;
+	}
+
+	.sub-header{
+		margin-top: 30px;
+	}
+}
+
+
+
+@media only screen and (max-width: 1200px){
+	
+	
+
+	header{
+
+
+		ul{
+			background: grey;
+			position: absolute;
+			top: -300px;
+			right: 0;
+		}
+
+		ul li{
+			float: none;
+		}
+
+
+		.hamburger{
+			display: block;
+		
+			span{
+				width: 30px;
+				height: 3px;
+				background: white;
+				margin: 5px 0;
+				position: absolute;
+				right: 20px;
+			}
+
+			span:nth-child(1){
+				top: 20px
+			}
+
+			span:nth-child(2){
+				top: 30px;
+			}
+
+			span:nth-child(3){
+				top: 40px;
+			}
+
+		}
+
+		.click{
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			float: right;
+		}
+
+		.open{
+		top: 10px;
+		}
+
+	}
+}
+
+
